@@ -1,0 +1,178 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Premium Wireless Headphones",
+      "description": "Experience crystal-clear audio with our premium wireless headphones. Featuring active noise cancellation, 30-hour battery life, and ultra-comfortable ear cushions for all-day wear.",
+      "price": 299,
+      "originalPrice": 399,
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&auto=format&fit=crop&q=60"
+      ],
+      "category": "Electronics",
+      "rating": 4.8,
+      "reviews": 1247,
+      "inStock": true,
+      "tags": [
+        "wireless",
+        "noise-cancelling",
+        "premium"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Minimalist Leather Watch",
+      "description": "A timeless piece that combines classic elegance with modern minimalism. Crafted from genuine Italian leather and featuring a precise Swiss movement.",
+      "price": 189,
+      "images": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=60"
+      ],
+      "category": "Accessories",
+      "rating": 4.6,
+      "reviews": 892,
+      "inStock": true,
+      "tags": [
+        "leather",
+        "minimalist",
+        "classic"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Smart Fitness Tracker",
+      "description": "Track your health and fitness goals with our advanced smart fitness tracker. Monitors heart rate, sleep patterns, steps, and 25+ workout modes.",
+      "price": 149,
+      "originalPrice": 199,
+      "images": [
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=800&auto=format&fit=crop&q=60"
+      ],
+      "category": "Electronics",
+      "rating": 4.5,
+      "reviews": 2156,
+      "inStock": true,
+      "tags": [
+        "fitness",
+        "smart",
+        "health"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Designer Canvas Backpack",
+      "description": "A versatile backpack designed for the modern commuter. Water-resistant canvas exterior, padded laptop compartment, and thoughtful organization pockets.",
+      "price": 129,
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1622560480605-d83c8b1a6f4e?w=800&auto=format&fit=crop&q=60"
+      ],
+      "category": "Accessories",
+      "rating": 4.7,
+      "reviews": 634,
+      "inStock": true,
+      "tags": [
+        "backpack",
+        "canvas",
+        "travel"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Portable Bluetooth Speaker",
+      "description": "Take your music anywhere with this compact yet powerful Bluetooth speaker. 360-degree sound, waterproof design, and 12-hour battery life.",
+      "price": 79,
+      "originalPrice": 99,
+      "images": [
+        "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=60"
+      ],
+      "category": "Electronics",
+      "rating": 4.4,
+      "reviews": 1823,
+      "inStock": true,
+      "tags": [
+        "bluetooth",
+        "portable",
+        "waterproof"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Premium Sunglasses",
+      "description": "Protect your eyes in style with these premium polarized sunglasses. UV400 protection, lightweight titanium frame, and scratch-resistant lenses.",
+      "price": 249,
+      "images": [
+        "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&auto=format&fit=crop&q=60"
+      ],
+      "category": "Accessories",
+      "rating": 4.9,
+      "reviews": 445,
+      "inStock": true,
+      "tags": [
+        "sunglasses",
+        "polarized",
+        "premium"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Ergonomic Office Chair",
+      "description": "Work in comfort with this ergonomic office chair. Adjustable lumbar support, breathable mesh back, and customizable armrests for all-day productivity.",
+      "price": 449,
+      "originalPrice": 599,
+      "images": [
+        "https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?w=800&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=800&auto=format&fit=crop&q=60"
+      ],
+      "category": "Home",
+      "rating": 4.6,
+      "reviews": 892,
+      "inStock": true,
+      "tags": [
+        "furniture",
+        "ergonomic",
+        "office"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Ceramic Coffee Set",
+      "description": "Elevate your morning routine with this artisanal ceramic coffee set. Hand-crafted stoneware includes 4 cups and matching saucers in a minimalist design.",
+      "price": 89,
+      "images": [
+        "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=800&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop&q=60"
+      ],
+      "category": "Home",
+      "rating": 4.8,
+      "reviews": 334,
+      "inStock": true,
+      "tags": [
+        "ceramic",
+        "coffee",
+        "handcrafted"
+      ]
+    },
+    {
+      "name": "nene",
+      "description": "my name is nene tanaka ",
+      "price": 230,
+      "originalPrice": 300,
+      "category": "Accessories",
+      "images": [
+        "https://is.zobj.net/image-server/v1/images?r=76xQ4p-zCyGzHHjr5akqiIVWmPfEA_4_aXaAZdC99MrCgrKaH5gZrIMQ9T0mA4s0n9viyar7EtzMcoF6S4O4J1F3vawP--LmH8dn5GqUvOY1ThpfO6MnH8eFfPGxDT5jve-n-0ZARDwz7VlY78kl29hwljNnVBD_XSvK2csJqQ7uvNi6glCE6IQPcREMHJQUDwun5anO8aXtEosWxGvrm269n9W6RDpU7me9bg"
+      ],
+      "rating": 5,
+      "reviews": 0,
+      "inStock": true,
+      "tags": [
+        "nene "
+      ],
+      "id": "1776104531365"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "chats": [
+    {
+      "id": "5cc94e44-c6bb-4bd2-9b89-d97feeb12c8a",
+      "userId": "9b31e2d1-c981-4018-a08b-747dccfeeba4",
+      "userName": "gaurav",
+      "userEmail": "rathore",
+      "subject": "make it new",
+      "status": "active",
+      "createdAt": "2026-04-13T19:41:41.018Z",
+      "updatedAt": "2026-04-13T19:42:15.364Z",
+      "unreadCount": 0,
+      "messages": [
+        {
+          "id": "fbf410e8-120a-4dae-899b-059ca0a02076",
+          "chatId": "5cc94e44-c6bb-4bd2-9b89-d97feeb12c8a",
+          "senderType": "user",
+          "senderId": "9b31e2d1-c981-4018-a08b-747dccfeeba4",
+          "senderName": "gaurav",
+          "content": "hui bro",
+          "timestamp": "2026-04-13T19:41:47.920Z",
+          "read": true
+        },
+        {
+          "id": "5075b587-a162-44c8-ad58-a4cc8463e5de",
+          "chatId": "5cc94e44-c6bb-4bd2-9b89-d97feeb12c8a",
+          "senderType": "admin",
+          "senderId": "your_admin_username",
+          "senderName": "your_admin_username",
+          "content": "yupp buddy ",
+          "timestamp": "2026-04-13T19:42:15.362Z",
+          "read": true
+        }
+      ],
+      "lastMessage": "yupp buddy "
+    }
+  ]
+}

@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RATHORE E-Commerce
 
-## Getting Started
+A modern, full-featured e-commerce website built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui. Features a dynamic product catalog, shopping cart, dark mode, and a secure admin panel.
 
-First, run the development server:
+## Features
+
+- **Dynamic Product Catalog** - Products are stored in a JSON database and fetched dynamically
+- **Shopping Cart** - Add/remove products, update quantities
+- **Admin Panel** - Secure admin dashboard to manage products (CRUD operations)
+- **Dark Mode** - Toggle between light and dark themes
+- **Responsive Design** - Mobile-first, fully responsive UI
+- **JWT Authentication** - Secure admin access with JWT tokens
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- JSON Database (file-based)
+- JWT Authentication
+- bcryptjs for password hashing
+
+## Setup Instructions
+
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Configure Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```env
+# Admin Credentials - CHANGE THESE!
+ADMIN_USERNAME=your_admin_username
+ADMIN_PASSWORD=your_secure_password
+
+# JWT Secret - Generate a strong random string
+JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+
+# Optional: Pre-hashed password (generate with bcrypt)
+# ADMIN_PASSWORD_HASH=$2a$10$...your_hashed_password...
+```
+
+**Important:** Change the default credentials before deploying!
+
+### 3. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) for the storefront.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Access Admin Panel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Navigate to [http://localhost:3000/admin](http://localhost:3000/admin)
+
+Login with your configured admin credentials from `.env.local`.
+
+## Admin Panel Features
+
+- **Dashboard** - View product statistics (total products, categories, in stock)
+- **Add Product** - Create new products with multiple images and tags
+- **Edit Product** - Update existing product details
+- **Delete Product** - Remove products from the catalog
+- **Search** - Find products quickly
+
+## API Routes
+
+- `GET /api/products` - List all products
+- `GET /api/products/[id]` - Get single product
+- `POST /api/products` - Create product (admin only)
+- `PUT /api/products/[id]` - Update product (admin only)
+- `DELETE /api/products/[id]` - Delete product (admin only)
+- `POST /api/auth/login` - Admin login
+- `GET /api/auth/verify` - Verify JWT token
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── admin/           # Admin panel pages
+│   ├── api/             # API routes
+│   ├── product/[id]/    # Product detail page
+│   ├── products/        # Product listing page
+│   └── page.tsx         # Homepage
+├── components/
+│   ├── ui/              # shadcn/ui components
+│   ├── CartSheet.tsx    # Shopping cart sidebar
+│   ├── Header.tsx       # Site header
+│   ├── Footer.tsx       # Site footer
+│   ├── Hero.tsx         # Homepage hero section
+│   ├── ProductCard.tsx  # Product card component
+│   ├── ThemeProvider.tsx
+│   └── ThemeToggle.tsx
+├── context/
+│   ├── CartContext.tsx
+│   └── AdminAuthContext.tsx
+├── lib/
+│   ├── db.ts            # Database utilities
+│   └── auth.ts          # Authentication utilities
+├── types/
+│   └── index.ts         # TypeScript types
+└── data/
+    └── db.json          # JSON database (auto-created)
+```
+
+## Security Notes
+
+- Change default JWT_SECRET in production
+- Use strong, unique admin password
+- The JSON database is suitable for demo/portfolio purposes only
+- For production, consider using a proper database (PostgreSQL, MongoDB, etc.)
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS](https://tailwindcss.com)
+- [shadcn/ui](https://ui.shadcn.com)
