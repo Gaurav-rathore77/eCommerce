@@ -14,18 +14,26 @@ export function ChatWidget() {
   const [chat, setChat] = useState<Chat | null>(null);
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputMessage, setInputMessage] = useState("");
-  const [userId] = useState(() => {
-    const stored = localStorage.getItem("chat-user-id");
-    if (stored) return stored;
-    const newId = uuidv4();
-    localStorage.setItem("chat-user-id", newId);
-    return newId;
-  });
+  const [userId, setUserId] = useState("");
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [showForm, setShowForm] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+  const stored = localStorage.getItem("chat-user-id");
+
+  if (stored) {
+    setUserId(stored);
+  } else {
+    const newId = uuidv4();
+
+    localStorage.setItem("chat-user-id", newId);
+
+    setUserId(newId);
+  }
+}, []);
 
   // Polling for new messages
   useEffect(() => {

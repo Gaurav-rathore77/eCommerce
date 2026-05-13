@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import { CartSheet } from "@/components/CartSheet";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ChatWidget } from "@/components/ChatWidget";
-
+import { FloatingAISupport } from "@/components/FloatingAISupport";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -47,6 +47,7 @@ export default function RootLayout({
             <Footer />
             <CartSheet />
             <ChatWidget />
+            <FloatingAISupport />
           </CartProvider>
         </ThemeProvider>
       </body>
