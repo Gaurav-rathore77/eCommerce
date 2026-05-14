@@ -2,6 +2,8 @@
 
 import { useState, useMemo, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+
+export const dynamic = 'force-dynamic';
 import { ProductCard } from "@/components/ProductCard";
 import { categories } from "@/data/products";
 import { Product } from "@/types";
