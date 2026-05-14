@@ -285,7 +285,7 @@ export default function AdminChatsPage() {
                   <div className="flex items-center gap-2">
                     {getStatusBadge(selectedChat.status)}
                     <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
+                      <DropdownMenuTrigger>
                         <Button variant="ghost" size="icon">
                           <MoreVertical className="h-4 w-4" />
                         </Button>

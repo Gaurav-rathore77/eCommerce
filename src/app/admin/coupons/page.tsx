@@ -191,7 +191,7 @@ export default function AdminCouponsPage() {
           <p className="text-muted-foreground">Manage discount coupons</p>
         </div>
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-          <DialogTrigger asChild>
+          <DialogTrigger>
             <Button onClick={resetForm}>
               <Plus className="h-4 w-4 mr-2" />
               Create Coupon
